@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style>
+        .fix{
+            text-align: center;
+        } 
+        body{
+            background: #edf8ed;
+        }
+        p{
+            color: #0b1e0c;
+        }
+        .primary-button{
+            background: #e1f4e3;
+        }
+        .secondary-button{
+            background: #e1f4e3;
+        }
+        #level{
+            background: #be5c55;
+        }
+        #answer{
+            text-align:center;
+            font-size: 30px;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="fix">
+    <p>Нажми на кнопку и получи задание</p>
+    <button class="add primary-button">сложение</button>
+    <button class="sub primary-button">вычетание</button>
+    <button class="mult primary-button">умножение</button>
+    <button class="div primary-button">деление</button>
+    </div>
+    <div id="answer"></div>
+    <p>Выбери уровень сложности</p>
+    <select name="" id="level">
+        <option value="eazy">легкий (1-9)</option>
+        <option value="mid">средний (10-99)</option>
+        <option value="hard">сложный (100-999)</option>
+    </select>
+    <br>
+    <br>
+    <button class="show secondary-button">Посмотреть статистику</button>
+    <button class="reset secondary-button">Сбросить статистику</button>
+    <script src="script.js"></script>
+</body>
+</html>
+
